@@ -45,6 +45,10 @@
         <action
             android:id="@+id/action_secondFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />
+        <argument
+            android:name="cont"
+            app:argType="integer"
+            android:defaultValue="6" />
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"

@@ -23,6 +23,7 @@ class FirstFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        b.tvCont1.setText(arguments?.getString("Contador"))
         b.btnBack1.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.initFragment)
         }
