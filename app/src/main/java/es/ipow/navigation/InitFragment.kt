@@ -31,10 +31,10 @@ class InitFragment : Fragment() {
         b.btnFragment1.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.firstFragment,null)
         )
-        b.btnFragment2.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.secondFragment,null)
-            //view.findNavController().navigate(R.id.action_initFragment_to_secondFragment, null)
-        )
+        b.btnFragment2.setOnClickListener {
+            //Navigation.createNavigateOnClickListener(R.id.secondFragment,null)
+            view.findNavController().navigate(R.id.action_initFragment_to_secondFragment, null)
+        }
     }
 
 }
